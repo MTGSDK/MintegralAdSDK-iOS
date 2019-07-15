@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = 'MintegralAdSDK'
-  spec.version      = '5.4.2'
+  spec.version      = '5.5.0'
   spec.summary      = 'Mintegral Network Mobile App Ad SDK'
   spec.homepage     = 'http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en'
   spec.description  = <<-DESC   
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author             = 'Mintegral'
   spec.social_media_url   = 'https://www.facebook.com/mintegral.official'
   spec.platform     = :ios, '7.0'
-  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => 'v5.4.2'}
+  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => spec.version}
 
 
   spec.libraries = 'sqlite3', 'xml2','z'

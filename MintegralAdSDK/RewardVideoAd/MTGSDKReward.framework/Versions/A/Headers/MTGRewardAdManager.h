@@ -33,12 +33,12 @@
  *  Called when show the video
  *
  *  @param unitId         - the unitId string of the Ad that display.
- *  @param rewardId       - the reward info about NativeX or AppLovin
+ *  @param rewardId       - the reward info you can set in mintegral portal
  *  @param userId       - The user's unique identifier in your system
  *  @param delegate       - reference to the object that implements MTGRewardAdShowDelegate protocol; will receive show events for the given unitId.
  *  @param viewController - UIViewController that shouold be set as the root view controller for the ad
  */
-- (void)showVideo:(nonnull NSString *)unitId withRewardId:(nonnull NSString *)rewardId userId:(nullable NSString *)userId delegate:(nullable id <MTGRewardAdShowDelegate>)delegate viewController:(nonnull UIViewController*)viewController;
+- (void)showVideo:(nonnull NSString *)unitId withRewardId:(nullable NSString *)rewardId userId:(nullable NSString *)userId delegate:(nullable id <MTGRewardAdShowDelegate>)delegate viewController:(nonnull UIViewController*)viewController;
 
 /**
  *  Will return whether the given unitId is loaded and ready to be shown.
