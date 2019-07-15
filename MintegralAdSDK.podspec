@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
     Mintegral's  AdSDK allows you to monetize your iOS and Android apps with Mintegral ads.  
                        DESC
 
-  spec.license      = 'to be add'
+  spec.license      = { :type => 'Mintegral', :file => "LICENSE.txt" }
   spec.author             = 'Mintegral'
   spec.social_media_url   = 'https://www.facebook.com/mintegral.official'
   spec.platform     = :ios, '7.0'
