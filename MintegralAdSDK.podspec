@@ -85,7 +85,7 @@ spec.subspec 'InterActiveAd' do |ss|
   ss.dependency 'MintegralAdSDK/NativeAd'
 end
   
-spec.subspec 'InterActiveAd' do |ss|
+spec.subspec 'BidInterActiveAd' do |ss|
   ss.ios.deployment_target = '7.0'
   ss.vendored_frameworks = 'MintegralAdSDK/InterActive/*.framework'
   ss.dependency 'MintegralAdSDK/BidNativeAd'
