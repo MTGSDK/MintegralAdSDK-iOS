@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author             = 'Mintegral'
   spec.social_media_url   = 'https://www.facebook.com/mintegral.official'
   spec.platform     = :ios, '7.0'
-  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => spec.version}
+  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => 'v5.4.2'}
 
 
   spec.libraries = 'sqlite3', 'xml2','z'
