@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = 'MintegralAdSDK'
-  spec.version      = '5.5.1'
+  spec.version      = '5.5.2'
   spec.summary      = 'Mintegral Network Mobile App Ad SDK'
   spec.homepage     = 'http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en'
   spec.description  = <<-DESC   
@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'NativeAd' do |ss|
   ss.ios.deployment_target = '7.0'
-  ss.vendored_frameworks = 'MintegralAdSDK/NativeAd/*.framework'
+  ss.vendored_frameworks = 'MintegralAdSDK/NativeAd/MTGSDK.framework'
   end
 
   spec.subspec 'BidNativeAd' do |ss|
