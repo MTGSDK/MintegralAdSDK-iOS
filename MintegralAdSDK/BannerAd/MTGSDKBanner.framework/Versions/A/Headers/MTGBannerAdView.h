@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
     MTGSmartBannerType
 };
 
-#define MTGBannerSDKVersion @"5.6.1"
+#define MTGBannerSDKVersion @"5.7.0"
 
 @interface MTGBannerAdView : UIView
 
@@ -53,6 +53,11 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
 @property(nonatomic,weak,nullable) id <MTGBannerAdViewDelegate> delegate;
 
 /**
+ The current ViewController of display ad.
+*/
+@property (nonatomic, weak) UIViewController * _Nullable  viewController;
+
+/**
  This is a method to initialize an MTGBannerAdView with the given unit id
 
  @param adSize The size of the banner view.
@@ -62,7 +67,7 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
  */
 - (nonnull instancetype)initBannerAdViewWithAdSize:(CGSize)adSize
                                             unitId:(nonnull NSString *) unitId
-                                rootViewController:(nonnull UIViewController *)rootViewController;
+                                rootViewController:(nullable UIViewController *)rootViewController;
 
 /**
  This is a method to initialize an MTGBannerAdView with the given unit id
@@ -74,7 +79,7 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
  */
 - (nonnull instancetype)initBannerAdViewWithBannerSizeType:(MTGBannerSizeType)bannerSizeType
                                             unitId:(nonnull NSString *) unitId
-                                rootViewController:(nonnull UIViewController *)rootViewController;
+                                rootViewController:(nullable UIViewController *)rootViewController;
 /**
  Begin to load banner ads
  */
