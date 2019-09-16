@@ -28,19 +28,11 @@
 - (void)adViewLoadFailedWithError:(NSError *)error adView:(MTGBannerAdView *)adView;
 
 /**
- This method is called when adView ad slot is showed successfully.
+ Sent immediately before the impression of an MTGBannerAdView object will be logged.
  
- @param adView : view for adView
+ @param adView An MTGBannerAdView object sending the message.
  */
-- (void)adViewShowSuccess:(MTGBannerAdView *)adView;
-
-/**
- This method is called when adView ad slot failed to show.
-
- @param error : error
- @param adView : view for adView
- */
-- (void)adViewShowFailedWithError:(NSError *)error adView:(MTGBannerAdView *)adView;
+- (void)adViewWillLogImpression:(MTGBannerAdView *)adView;
 
 /**
  This method is called when ad is clicked.
