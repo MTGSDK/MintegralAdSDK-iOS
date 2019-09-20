@@ -23,7 +23,7 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
 3. Open `Podfile`, and add your dependencies. A simple Podspec is shown here:
 
     ```
-    platform :ios, '7.0'
+    platform :ios, '8.0'
     pod 'MintegralAdSDK/RewardVideoAd'
     #pod 'MintegralAdSDK'
 
