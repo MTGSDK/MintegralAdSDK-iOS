@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define MTGInterActiveSDKVersion @"5.7.1"
+#define MTGInterActiveSDKVersion @"5.8.0"
+
 
 
 typedef NS_ENUM(NSInteger, MTGInterActiveResourceType) {
@@ -96,7 +97,7 @@ typedef NS_ENUM(NSInteger,MTGInterActiveStatus) {
 
 @property (nonatomic, readonly)   NSString * _Nonnull currentUnitId;
 
-@property (nonatomic, weak)  UIViewController *viewController;
+@property (nonatomic, weak)  UIViewController * _Nullable viewController;
 
 
 
