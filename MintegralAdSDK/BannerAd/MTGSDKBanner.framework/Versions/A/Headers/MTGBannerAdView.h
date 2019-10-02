@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
     MTGSmartBannerType
 };
 
-#define MTGBannerSDKVersion @"5.8.0"
+#define MTGBannerSDKVersion @"5.8.1"
 
 @interface MTGBannerAdView : UIView
 
