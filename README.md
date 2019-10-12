@@ -24,9 +24,38 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
 
     ```
     platform :ios, '8.0'
+    
+    #Note: default is using NativeAd Framework
+    #pod 'MintegralAdSDK'  
+    #Note: or 
+    #pod 'MintegralAdSDK/NativeAd'  
+    
+    #Note: using Bid NativeAd Framework
+    #pod 'MintegralAdSDK/BidNativeAd'  
+    
+    
+    #Note: using RewardVideoAd Framework
     pod 'MintegralAdSDK/RewardVideoAd'
-    #pod 'MintegralAdSDK'
+    
+    #Note: using Bid RewardVideoAd Framework
+    pod 'MintegralAdSDK/BidRewardVideoAd'
+    
+    #Note: using InterstitialVideoAd Framework
+    pod 'MintegralAdSDK/InterstitialVideoAd'
+    
+    #Note: using Bid InterstitialVideoAd Framework
+    pod 'MintegralAdSDK/BidInterstitialVideoAd'
+    
+    #Note: using InterstitialAd Framework
+    pod 'MintegralAdSDK/InterstitialAd'
+    
+    #Note: using InterActiveAd Framework
+    pod 'MintegralAdSDK/InterActiveAd'
 
+    #Note: using BannerAd Framework
+    pod 'MintegralAdSDK/BannerAd'
+    
+    
     ```
 
 4. Save the file.
