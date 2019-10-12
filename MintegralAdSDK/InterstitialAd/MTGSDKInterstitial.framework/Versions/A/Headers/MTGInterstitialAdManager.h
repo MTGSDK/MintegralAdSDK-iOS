@@ -5,7 +5,7 @@
 //  Created by CharkZhang on 2016/11/8.
 //
 
-#define MTGInterstitialSDKVersion @"5.8.1"
+#define MTGInterstitialSDKVersion @"5.8.2"
 
 #import <Foundation/Foundation.h>
 

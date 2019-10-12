@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MTGCampaign.h"
 
-#define MTGNativeAdSDKVersion @"5.8.1"
+#define MTGNativeAdSDKVersion @"5.8.2"
 
 
 typedef NS_ENUM(NSInteger, MTGAdCategory) {
