@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define MTGInterstitialVideoSDKVersion @"5.8.2"
+#define MTGInterstitialVideoSDKVersion @"5.8.3"
 
 
 @class MTGInterstitialVideoAdManager;

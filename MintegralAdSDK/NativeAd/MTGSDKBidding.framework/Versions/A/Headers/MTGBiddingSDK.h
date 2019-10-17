@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define MTGBiddingSDKVersion @"5.8.2"
+#define MTGBiddingSDKVersion @"5.8.3"
 
 @interface MTGBiddingSDK : NSObject
 

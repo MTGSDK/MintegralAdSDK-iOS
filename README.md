@@ -55,6 +55,8 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
     #Note: using BannerAd Framework
     pod 'MintegralAdSDK/BannerAd'
     
+    #Note: using Bid BannerAd Framework
+    pod 'MintegralAdSDK/BidBannerAd'
     
     ```
 

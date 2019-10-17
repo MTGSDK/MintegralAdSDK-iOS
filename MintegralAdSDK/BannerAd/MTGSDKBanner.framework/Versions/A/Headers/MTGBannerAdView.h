@@ -8,24 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MTGSDK/MTGBool.h>
+#import <MTGSDK/MTGAdSize.h>
 #import "MTGBannerAdViewDelegate.h"
 
-typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
-    /*Represents the fixed banner ad size - 320pt by 50pt.*/
-    MTGStandardBannerType320x50,
-    
-    /*Represents the fixed banner ad size - 320pt by 90pt.*/
-    MTGLargeBannerType320x90,
-    
-    /*Represents the fixed banner ad size - 300pt by 250pt.*/
-    MTGMediumRectangularBanner300x250,
-    
-    /*if device height <=720,Represents the fixed banner ad size - 320pt by 50pt;
-      if device height > 720,Represents the fixed banner ad size - 728pt by 90pt*/
-    MTGSmartBannerType
-};
-
-#define MTGBannerSDKVersion @"5.8.2"
+#define MTGBannerSDKVersion @"5.8.3"
 
 @interface MTGBannerAdView : UIView
 
@@ -84,6 +70,14 @@ typedef NS_ENUM(NSInteger,MTGBannerSizeType) {
  Begin to load banner ads
  */
 - (void)loadBannerAd;
+
+/*!
+This method is used to request ads with the token you got previously
+
+@param bidToken    - the token from bid request within MTGBidFramework.
+*/
+
+- (void)loadBannerAdWithBidToken:(nonnull NSString *)bidToken;
 
 /**
 Call this method when you want to relase MTGBannerAdView. It's optional.
