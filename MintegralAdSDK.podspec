@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '8.0'
 
 
-  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => spec.version}
+  spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => sdkVersion}
 
 
   spec.libraries = 'sqlite3', 'xml2','z'
