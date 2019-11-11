@@ -5,7 +5,7 @@
 //  Created by CharkZhang on 2016/11/8.
 //
 
-#define MTGInterstitialSDKVersion @"5.8.3"
+#define MTGInterstitialSDKVersion @"5.8.4"
 
 #import <Foundation/Foundation.h>
 
@@ -103,7 +103,6 @@ typedef NS_ENUM(NSInteger, MTGInterstitialAdCategory) {
 /**
  *  Called when load the Interstitial
  *
- *  @param unitId   the unitId string of the offer wall that was loaded.
  *  @param delegate reference to the object that implements MTGInterstitialAdLoadDelegate protocol; will receive load events for the given unitId.
  */
 - (void)loadWithDelegate:(nullable id <MTGInterstitialAdLoadDelegate>) delegate;
