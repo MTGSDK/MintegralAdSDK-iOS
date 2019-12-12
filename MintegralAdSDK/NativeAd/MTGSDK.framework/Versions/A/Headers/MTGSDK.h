@@ -6,7 +6,7 @@
 //
 
 
-#define MTGSDKVersion @"5.8.4"
+#define MTGSDKVersion @"5.8.5"
 
 
 #import <Foundation/Foundation.h>
@@ -134,6 +134,13 @@
 @Attention Do not mix the usage of `setConsentStatus:` and `setUserPrivateInfoType:agree` simultaneously in your app.
  */
 @property (nonatomic, assign) BOOL consentStatus;
+
+/**
+ Set user GDPR authorization IDFV information
+ Disable the collection of idfv , Default to be NO.
+ 
+ */
+@property (nonatomic, assign) BOOL disableIDFV;
 
 - (void)setUserInfo:(nonnull MTGUserInfo *)userInfo;
 

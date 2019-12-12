@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MTGSDK/MTGRewardAdInfo.h>
 
-#define MTGRewardVideoSDKVersion @"5.8.4"
+#define MTGRewardVideoSDKVersion @"5.8.5"
 
 
 /**

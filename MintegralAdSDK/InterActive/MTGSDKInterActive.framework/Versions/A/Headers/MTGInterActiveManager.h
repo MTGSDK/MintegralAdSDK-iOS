@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define MTGInterActiveSDKVersion @"5.8.4"
+#define MTGInterActiveSDKVersion @"5.8.5"
 
 
 
