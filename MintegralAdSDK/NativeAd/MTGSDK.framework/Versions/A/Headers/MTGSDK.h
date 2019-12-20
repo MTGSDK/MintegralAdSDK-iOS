@@ -6,7 +6,7 @@
 //
 
 
-#define MTGSDKVersion @"5.8.5"
+#define MTGSDKVersion @"5.8.6"
 
 
 #import <Foundation/Foundation.h>

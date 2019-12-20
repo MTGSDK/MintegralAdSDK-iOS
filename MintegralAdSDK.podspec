@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = 'MintegralAdSDK'
-  sdkVersion        = '5.8.5'
+  sdkVersion        = '5.8.6'
   spec.version      = sdkVersion + '.0'
   spec.summary      = 'Mintegral Network Mobile App Ad SDK'
   spec.homepage     = 'http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en'
