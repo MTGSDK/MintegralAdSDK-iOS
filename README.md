@@ -1,6 +1,6 @@
 # Mintegral SDKs for iOS
 
-Much more information can be found at http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en.
+More information can be found at the [Wiki page.](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios)
 
 ## Install a Mintegral SDK using CocoaPods
 
