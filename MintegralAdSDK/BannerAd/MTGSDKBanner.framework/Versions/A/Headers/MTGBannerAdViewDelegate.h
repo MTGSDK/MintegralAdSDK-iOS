@@ -65,6 +65,13 @@
  */
 - (void)adViewCloseFullScreen:(MTGBannerAdView *)adView;
 
+/**
+ This method is called when ad is Closed.
+
+ @param adView : view for adView
+ */
+- (void)adViewClosed:(MTGBannerAdView *)adView;
+
 
 @end
 
