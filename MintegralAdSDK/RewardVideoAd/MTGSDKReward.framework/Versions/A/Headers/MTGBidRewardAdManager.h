@@ -26,7 +26,7 @@
  *  Called when load the video
  *
  *  @param bidToken    - the token from bid request within MTGBidFramework.
- *  @param unitId      - the unitId string of the Ad that was loaded.
+ *  @param unitId        - the unitId string of the Ad that was loaded.
  *  @param delegate    - reference to the object that implements MTGRewardAdLoadDelegate protocol; will receive load events for the given unitId.
  */
 - (void)loadVideoWithBidToken:(nonnull NSString *)bidToken
@@ -37,9 +37,9 @@
  *  Called when show the video
  *
  *  @param unitId         - the unitId string of the Ad that display.
- *  @param rewardId       - the reward info about NativeX or AppLovin
- *  @param userId       - The user's unique identifier in your system
- *  @param delegate       - reference to the object that implements MTGRewardAdShowDelegate protocol; will receive show events for the given unitId.
+ *  @param rewardId     - the id  about rewardInfo
+ *  @param userId         - The user's unique identifier in your system
+ *  @param delegate     - reference to the object that implements MTGRewardAdShowDelegate protocol; will receive show events for the given unitId.
  *  @param viewController - UIViewController that shouold be set as the root view controller for the ad
  */
 - (void)showVideo:(nonnull NSString *)unitId withRewardId:(nonnull NSString *)rewardId userId:(nullable NSString *)userId delegate:(nullable id <MTGRewardAdShowDelegate>)delegate viewController:(nonnull UIViewController*)viewController;
@@ -60,6 +60,22 @@
 - (void)cleanAllVideoFileCache;
 
 
+/**
+*  Set  alertView text,if you want to change the alertView text.
+*
+* @param title  alert title
+* @param content    alertcontent
+* @param confirmText    confirm button text
+* @param cancelText     cancel button text
+* @param unitId     unitId
+
+ NOTE:called before loadAd
+*/
+- (void)setAlertWithTitle:(NSString *_Nullable)title
+                  content:(NSString *_Nullable)content
+              confirmText:(NSString *_Nullable)confirmText
+               cancelText:(NSString *_Nullable)cancelText
+                   unitId:(NSString *_Nullable)unitId;
 
 @end
 

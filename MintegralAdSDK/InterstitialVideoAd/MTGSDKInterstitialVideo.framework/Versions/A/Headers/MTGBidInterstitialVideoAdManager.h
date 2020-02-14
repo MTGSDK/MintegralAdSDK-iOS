@@ -62,7 +62,38 @@
  */
 - (void)cleanAllVideoFileCache;
 
+/**
+  * Set interstitial video reward if you need，call before loadAd.
+  * @param MTGIVRewardMode  {@link MTGIVRewardMode} fro list of supported types
+  * @param playRate Set the timing of the reward alertView,range of 0~1(eg:set 0.6,indicates 60%).
+  NOTE:In MTGIVRewardPlayMode, playRate value indicates that a reward alertView will appear when the playback reaches the set playRate.
+       In MTGIVRewardCloseMode, playRate value indicates that when the close button is clicked, if the video playback time is less than the set playRate, reward alertView will appear.
+ */
+- (void)setIVRewardMode:(MTGIVRewardMode)ivRewardMode playRate:(CGFloat)playRate;
 
+/**
+ * Set interstitial video reward if you need，call before loadAd.
+ * @param MTGIVRewardMode  {@link MTGIVRewardMode} fro list of supported types
+ * @param playTime Set the timing of the reward alertView,range of 0~100s.
+  NOTE:In MTGIVRewardPlayMode, playTime value indicates that a reward alertView will appear when the playback reaches the set playTime.
+      In MTGIVRewardCloseMode, playTime value indicates that when the close button is clicked, if the video playback time is less than the set playTime, reward alertView will appear.
+*/
+- (void)setIVRewardMode:(MTGIVRewardMode)ivRewardMode playTime:(NSInteger)playTime;
+
+/**
+*  Call this method when you want custom the reward alert  display text.
+*
+* @param title  alert title
+* @param content    alertcontent
+* @param confirmText    confirm button text
+* @param cancelText     cancel button text
+ 
+ NOTE:Must be called before loadAd
+*/
+- (void)setAlertWithTitle:(NSString *_Nullable)title
+                  content:(NSString *_Nullable)content
+              confirmText:(NSString *_Nullable)confirmText
+               cancelText:(NSString *_Nullable)cancelText;
 @end
 
 

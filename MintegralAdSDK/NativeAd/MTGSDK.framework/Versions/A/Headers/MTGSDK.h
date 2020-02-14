@@ -6,8 +6,6 @@
 //
 
 
-#define MTGSDKVersion @"5.8.8"
-
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -20,6 +18,7 @@
 #import <MTGSDK/MTGMediaView.h>
 #import <MTGSDK/MTGUserInfo.h>
 
+#define MTGSDKVersion @"5.9.0"
 
 @interface MTGSDK : NSObject
 

@@ -7,9 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MTGSDK/MTGRewardAdInfo.h>
 
-#define MTGInterstitialVideoSDKVersion @"5.8.8"
+#define MTGInterstitialVideoSDKVersion @"5.9.0"
 
+/**
+ We will call back the time when the user saw the alert message. The timing depends on the way you set MTGIVRewardMode
+*/
+typedef NS_ENUM(NSInteger,MTGIVRewardMode) {
+    MTGIVRewardCloseMode,//The alert was shown when the user tried to close the ad.
+    MTGIVRewardPlayMode//The alert was shown when the ad played to a certain extent
+};
+
+/**
+ We will call back whether the alert information has shown to the user and decision of the user.
+*/
+typedef NS_ENUM(NSInteger,MTGIVAlertWindowStatus) {
+    MTGIVAlertNotShown, //The alert window was not shown
+    MTGIVAlertChooseContinue,//The alert window has shown and the user chooses to continue which means he wants the reward.
+    MTGIVAlertChooseCancel //The alert window has shown and the user chooses to cancel which means he doesn’t want the reward.
+};
 
 @class MTGInterstitialVideoAdManager;
 @class MTGBidInterstitialVideoAdManager;
@@ -74,7 +91,15 @@
 /**
  *  Called when the ad  did closed;
  */
-- (void) onInterstitialVideoAdDidClosed:(MTGInterstitialVideoAdManager *_Nonnull)adManager;
+- (void)onInterstitialVideoAdDidClosed:(MTGInterstitialVideoAdManager *_Nonnull)adManager;
+
+ /**
+*  If Interstitial Video  reward is set, you will receive this callback
+*  @param achieved  Whether the video played to required rate
+* @param alertWindowStatus  {@link MTGIVAlertWindowStatus} fro list of supported types
+  NOTE:You can decide whether to give the reward based on that callback
+ */
+- (void)onInterstitialVideoAdPlayVideo:(BOOL)achieved alertWindowStatus:(MTGIVAlertWindowStatus)alertWindowStatus adManager:(MTGInterstitialVideoAdManager *_Nonnull)adManager;
 
 @end
 
@@ -135,7 +160,14 @@
 /**
  *  Called when the ad  did closed;
  */
-- (void) onInterstitialVideoAdDidClosed:(MTGBidInterstitialVideoAdManager *_Nonnull)adManager;
+- (void)onInterstitialVideoAdDidClosed:(MTGBidInterstitialVideoAdManager *_Nonnull)adManager;
 
+ /**
+*  If Interstitial Video  reward is set, you will receive this callback
+*  @param achieved  Whether the video played to required rate
+* @param alertWindowStatus  {@link MTGIVAlertWindowStatus} fro list of supported types
+  NOTE:You can decide whether to give the reward based on that callback
+ */
+- (void)onInterstitialVideoAdPlayVideo:(BOOL)achieved alertWindowStatus:(MTGIVAlertWindowStatus)alertWindowStatus adManager:(MTGBidInterstitialVideoAdManager *_Nonnull)adManager;
 
 @end

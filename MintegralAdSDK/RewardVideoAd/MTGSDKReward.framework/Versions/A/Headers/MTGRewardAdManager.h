@@ -55,5 +55,20 @@
 - (void)cleanAllVideoFileCache;
 
 
+/**
+*  Set  alertView text,if you want to change the alertView text.
+*
+* @param title  alert title
+* @param content    alertcontent
+* @param confirmText    confirm button text
+* @param cancelText     cancel button text
+* @param unitId     unitId
 
+ NOTE:called before loadAd
+*/
+- (void)setAlertWithTitle:(NSString *_Nullable)title
+                  content:(NSString *_Nullable)content
+              confirmText:(NSString *_Nullable)confirmText
+               cancelText:(NSString *_Nullable)cancelText
+                   unitId:(NSString *_Nullable)unitId;
 @end

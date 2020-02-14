@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define MTGInterActiveSDKVersion @"5.8.8"
+
+#define MTGInterActiveSDKVersion @"5.9.0"
 
 
 
@@ -144,4 +145,17 @@ typedef NS_ENUM(NSInteger,MTGInterActiveStatus) {
 - (void)loadRemoteIconToView:(nonnull UIView *)view withDefaultIconImage:(nullable UIImage *)image;
 
 
+/** 
+*  Set  alertView style,if you want to change the alertView style.
+*
+* @param title title
+* @param content content
+* @param confirmText confirmText
+* @param cancelText cancelText
+ NOTE:Must be called before loadAd
+*/
+- (void)setAlertWithTitle:(NSString *_Nullable)title
+                  content:(NSString *_Nullable)content
+              confirmText:(NSString *_Nullable)confirmText
+               cancelText:(NSString *_Nullable)cancelText;
 @end
